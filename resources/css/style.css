@@ -95,12 +95,24 @@ h2:after {
   line-height: 145%;
 }
 
-.icon-big {
-  font-size: 400%;
-  display: block;
+/* --------------------- */
+/* LINKS*/
+/* --------------------- */
+
+a:link,
+a:visited {
+  text-decoration: none;
   color: #e67e22;
-  margin-bottom: 10px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
 }
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
 /* --------------------- */
 /* BUTTONS*/
 /* --------------------- */
@@ -270,8 +282,51 @@ WORKS
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 45px;
   width: auto;
   margin-right: 10px;
+}
+
+/*
+----------------
+CITIES
+----------------- */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature {
+  margin-bottom: 5px;
+}
+
+/*
+----------------
+ICONS
+----------------- */
+
+.icon-big {
+  font-size: 400%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+.icon-small {
+  color: #e67e22;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 120%;
+
+  /* align text and icons */
+  margin-top: -3px;
+  line-height: 120%;
+  vertical-align: middle;
 }
