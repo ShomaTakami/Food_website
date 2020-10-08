@@ -108,6 +108,10 @@ a:visited {
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
   transition: border-bottom 0.2s, color 0.2s;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  -moz-transition: border-bottom 0.2s, color 0.2s;
+  -ms-transition: border-bottom 0.2s, color 0.2s;
+  -o-transition: border-bottom 0.2s, color 0.2s;
 }
 a:hover,
 a:active {
@@ -127,7 +131,11 @@ input[type="submit"] {
   text-decoration: none;
   border-radius: 200px;
   color: #fff;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s color 0.2s;
+  -webkit-transition: background-color 0.2s, border 0.2s color 0.2s;
+  -moz-transition: background-color 0.2s, border 0.2s color 0.2s;
+  -ms-transition: background-color 0.2s, border 0.2s color 0.2s;
+  -o-transition: background-color 0.2s, border 0.2s color 0.2s;
 }
 .btn-full:link,
 .btn-full:visited,
@@ -170,18 +178,30 @@ header {
   height: 100vh;
   background-attachment: fixed;
 }
+
 .hero-text-box {
   position: absolute;
   width: 1140px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .logo {
   height: 100px;
   width: auto;
   float: left;
   margin: 20px 0 0 0;
+}
+.logo-black {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+  display: none;
 }
 
 .main-nav {
@@ -202,14 +222,53 @@ header {
   text-transform: uppercase;
   font-size: 90%;
   border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s;
   color: white;
+  transition: border-bottom 0.2s;
+  -webkit-transition: border-bottom 0.2s;
+  -moz-transition: border-bottom 0.2s;
+  -ms-transition: border-bottom 0.2s;
+  -o-transition: border-bottom 0.2s;
 }
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
+/* mobile-navigation */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+/* sticky navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgb(223, 223, 223);
+  z-index: 9999;
+}
+.main-nav {
+  margin: 18px;
+}
 
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
+}
 /*
 ----------------
 FEATURES
@@ -246,10 +305,22 @@ MEALS
   width: 100%;
   height: auto;
   transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
   transition: transform 0.5s, opacity 0.5s;
+  -webkit-transition: transform 0.5s, opacity 0.5s;
+  -moz-transition: transform 0.5s, opacity 0.5s;
+  -ms-transition: transform 0.5s, opacity 0.5s;
+  -o-transition: transform 0.5s, opacity 0.5s;
 }
 .meal-photos img:hover {
   transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
   opacity: 1;
 }
 /*
@@ -534,4 +605,22 @@ footer p {
   text-align: center;
   font-size: 90%;
   margin-top: 20px;
+}
+/*
+----------------
+ANIMATION
+----------------- */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+.js--wp-4 {
+  animation-duration: 1s;
+}
+.js--wp-1 .animate__animated,
+.js--wp-2 .animate__animated,
+.js--wp-3 .animate__animated {
+  opacity: 1;
 }

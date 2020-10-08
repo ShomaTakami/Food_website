@@ -18,8 +18,15 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Omnifood</title>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -30,12 +37,18 @@
             alt="Omnifood logo"
             class="logo"
           />
+          <img
+            src="/resources/image/logo.png"
+            alt="Omnifood logo black"
+            class="logo-black"
+          />
           <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
           </ul>
+          <a class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
         </div>
       </nav>
       <div class="hero-text-box">
@@ -43,11 +56,11 @@
           Goodbye Junk Food.<br />
           Hello super Healthy meals.
         </h1>
-        <a class="btn btn-full" href="#">I'm hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
       </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -56,7 +69,7 @@
           we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <ion-icon name="infinite-outline" class="icon-big"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -165,7 +178,7 @@ cherries and strawberries"
         </li>
       </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -174,7 +187,7 @@ cherries and strawberries"
           <img
             src="/resources/image/app-iPhone.png"
             alt="Omnifood app on iPhone"
-            class="app-screen"
+            class="app-screen js--wp-2"
           />
         </div>
         <div class="col span-1-of-2 step-box">
@@ -206,11 +219,11 @@ cherries and strawberries"
         </div>
       </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
           <img src="/resources/image/lisbon-3.jpg" alt="lisbon" />
           <h3>Lisbon</h3>
@@ -299,7 +312,7 @@ cherries and strawberries"
           <blockquote>
             Inexpensive, healthy and great-tasting meals, delivered right to my
             home. We have lots of food delivery here in Lisbon, but no one comes
-            even close to Omifood. Me and my family are so in love!
+            even close to Omnifood. Me and my family are so in love!
 
             <cite
               ><img src="/resources/image/customer-2.jpg" alt="" /> Joana
@@ -321,11 +334,11 @@ cherries and strawberries"
         </div>
       </div>
     </section>
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
       <div class="row"><h2>Start eating healthy today</h2></div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
@@ -570,6 +583,14 @@ cherries and strawberries"
         <p>Copyright &copy; 2020 by Omnifood. All rights reserved</p>
       </div>
     </footer>
+
+    <script src="    https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.js
+    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <script src="/vendors/js/jquery.waypoints.min.js"></script>
   </body>
 </html>
 <!--

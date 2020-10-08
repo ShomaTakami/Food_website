@@ -69,8 +69,11 @@
     width: 100% !important;
     margin: 0 0 4% 0;
   }
-  .main-nav {
+  /* .main-nav {
     display: none;
+  } */
+  .mobile-nav-icon {
+    display: inline-block;
   }
   h1 {
     font-size: 180%;
