@@ -172,7 +172,7 @@ input[type="submit"] {
 /* --------------------- */
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.698), rgba(0, 0, 0, 0.698)),
-    url("../css/image/hero.jpg");
+    url("../css/image/hero-min.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -419,7 +419,7 @@ TESTIMONIALS
 ----------------- */
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.808)),
-    url(image/back-customers.jpg);
+    url(image/back-customers-min.jpg);
   background-size: cover;
   color: white;
   background-attachment: fixed;
